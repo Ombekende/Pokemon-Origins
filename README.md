@@ -6,4 +6,6 @@ https://docs.google.com/spreadsheets/d/10f14I0VBrqqRzqSILnPwEOa9bEN7JEWqW3fjeN_e
 origins are added through datapacks ofc and they have a specific file structure
 data/origins is folder modifying default origins, mostly to modify the layer, rn its replacing the default layer with ours, it might be better to just disable it and set our origins on their own layer tho
 
-sata/origin
+data/orimon is for our own origins and custom powers!
+
+as of rn theres only normal type, and it just has the base shulker origin power, just so theres *something*
