@@ -1,0 +1,9 @@
+{
+	"powers": [
+	"origins:shulker_inventory"
+	],
+	"order": 1,
+	"impact": 0,
+	"name": "Normal Type",
+	"description": "Not unusually strong or special, but decent enough in any situation."
+}
