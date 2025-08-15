@@ -1,7 +1,8 @@
 {
 	"powers": [
 	"orimon:photosynthesis",
-	"orimon:flammable"
+	"orimon:flammable",
+	"orimon:fertilizer"
 	],
 	"order": 1,
 	"impact": 0,

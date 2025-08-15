@@ -2,8 +2,8 @@
 	"powers": [
 	"origins:elytra",
 	"origins:fresh_air",
-	"origins:fall_immunity",
-	"orimon:poweredflight"
+	"orimon:poweredflight",
+	"orimon:pokeride"
 	],
 	"order": 1,
 	"impact": 0,

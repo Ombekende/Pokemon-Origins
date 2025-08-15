@@ -1,0 +1,14 @@
+{
+	"powers": [
+        "origins:fire_immunity",
+        "origins:burning_wrath",
+        "origins:water_vulnerability",
+		"orimon:small_fireball",
+		"orimon:lava_vision",
+		"orimon:lavawalking"
+	],
+	"order": 1,
+	"impact": 0,
+	"name": "Fire Type",
+	"description": ""
+}
