@@ -1,11 +1,14 @@
 {
 	"powers": [
         "origins:fire_immunity",
-        "origins: burning_wrath",
-        "origins: water_vulnerability"
+        "origins:burning_wrath",
+        "orimon:water_vulnerability",
+        "orimon:small_fireball",
+        "orimon:lavawalking",
+        "orimon:lava_vision"
 	],
 	"order": 1,
 	"impact": 0,
 	"name": "Fire Type",
-	"description": ""
+	"description": "Loves the fire, run away from the water"
 }
