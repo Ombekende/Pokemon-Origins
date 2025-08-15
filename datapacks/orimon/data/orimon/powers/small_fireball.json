@@ -1,0 +1,8 @@
+{
+    "type": "origins:fire_projectile",
+    "entity_type": "minecraft:small_fireball",
+    "cooldown": "40",
+    "count": "1",
+    "name": "Blaze_Fireball",
+    "description": "Press the action key to fire off some fire"
+}

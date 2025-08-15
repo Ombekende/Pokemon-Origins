@@ -1,0 +1,11 @@
+{
+	"powers": [
+        "origins:fire_immunity",
+        "origins: burning_wrath",
+        "origins: water_vulnerability"
+	],
+	"order": 1,
+	"impact": 0,
+	"name": "Fire Type",
+	"description": ""
+}

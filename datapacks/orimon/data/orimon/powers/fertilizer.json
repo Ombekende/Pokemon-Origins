@@ -1,0 +1,23 @@
+{
+        "type": "origins:active_self",
+        "entity_action": {
+        	"type": "origins:block_action_at",
+        	"block_action": {
+            	"type": "origins:bonemeal"
+    	    }
+        },
+        "condition": {
+        		"type": "origins:raycast",
+        		"distance": 5,
+        		"block": true,
+        		"entity": true,
+        		"shape_type": "outline",
+        		"fluid_handling": "none",
+    	},
+        "cooldown": 1,
+        "hud_render": {
+            "should_render": false
+        },
+        "name": "Fertilizer",
+        "description": "Your hands are as green as they come."
+}

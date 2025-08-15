@@ -1,0 +1,9 @@
+{
+    "type": "modidy_lava_speed",
+    "modifier": {
+        "operation": "multiply_base_multiplicative",
+        "value": "1"
+    },
+    "name": "LavaWalking",
+    "description": "Move faster through hot liquids"
+}
