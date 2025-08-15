@@ -1,0 +1,12 @@
+{
+	"powers": [
+	"origins:elytra",
+	"origins:fresh_air",
+	"origins:fall_immunity",
+	"orimon:poweredflight"
+	],
+	"order": 1,
+	"impact": 0,
+	"name": "Flying Type",
+	"description": "Highly agile and capable of flight, but fragile."
+}
