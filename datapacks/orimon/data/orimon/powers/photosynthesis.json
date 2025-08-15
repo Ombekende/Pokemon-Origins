@@ -1,0 +1,19 @@
+{
+    "type": "origins:stacking_status_effect",
+	"min_stacks": -9,
+	"max_stacks": 100,
+	"duration_per_stack": 10,
+	"tick_rate": 10,
+	"effects": {
+		"amplifier": 0,
+		"duration": -1,
+		"show_icon": false,
+		"is_ambient": true,
+		"id": "minecraft:regeneration"
+	},
+	"name": "Photosynthesis",
+	"description": "You regenerate health in sunlight!",
+	"condition": {
+		"type": "origins:exposed_to_sun"
+	}
+}

@@ -1,0 +1,10 @@
+{
+	"powers": [
+	"orimon:photosynthesis",
+	"orimon:flammable"
+	],
+	"order": 1,
+	"impact": 0,
+	"name": "Grass  Type",
+	"description": "Loves the sun, but vulnerable to fire."
+}
