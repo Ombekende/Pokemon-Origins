@@ -8,7 +8,7 @@
 		"amplifier": 0,
 		"duration": -1,
 		"show_icon": false,
-		"is_ambient": true,
+		"show_particles": true,
 		"id": "minecraft:regeneration"
 	},
 	"name": "Photosynthesis",
