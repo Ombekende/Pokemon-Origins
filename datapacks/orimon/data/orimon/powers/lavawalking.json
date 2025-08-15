@@ -1,5 +1,5 @@
 {
-    "type": "modidy_lava_speed",
+    "type": "origins:modify_lava_speed",
     "modifier": {
         "operation": "multiply_base_multiplicative",
         "value": 1
