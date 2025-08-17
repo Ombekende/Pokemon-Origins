@@ -12,18 +12,56 @@
 		"retain_state": false
 	},
 	
-	{
+	"glowy": {
 		"type": "origins:self_glow",
 		"use_teams": false,
 		"red": 1,
-		"green": 1,
-		"blue": 0,
+		"green": 0.9529411764705882,
+		"blue": 0.3725490196078431,
+		
+		"bientity_condition": {
+			"type": "origins:can_see"
+		},		
 		"condition": {
 			"type": "origins:power_active",
 			"power": "*:*_toggle"
 		}
 	},
-
+	
+	"speedyparticles": {
+		"type": "origins:particle",
+		"particle": "minecraft:electric_spark",
+		"frequency": 1,
+		"count": 10,
+		"speed": 0.5,
+		"visible_in_first_person": true,
+		
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:power_active",
+				"power": "*:*_toggle"
+			},
+			{
+				"type": "origins:moving"
+			}
+			]
+		}
+	},
+	
+	"staticparticles": {
+		"type": "origins:particle",
+		"particle": "minecraft:electric_spark",
+		"frequency": 10,
+		"count": 2,
+		"speed": 0.1,
+		
+		"condition": {
+			"type": "origins:power_active",
+			"power": "*:*_toggle"
+		}
+	},
 	
 	"conditioned_attribute": {
 		"type": "origins:conditioned_attribute",
@@ -31,32 +69,37 @@
 			{
 				"attribute": "minecraft:generic.movement_speed",
 				"operation": "add_multiplied_total",
-				"id": "zippy",
-				"amount": 2
-			},
-			{
-				"attribute": "minecraft:generic.gravity",
-				"operation": "add_multiplied_total",
+				"value": 1,
 				"id": "zippy",
 				"amount": 3
 			},
 			{
+				"attribute": "minecraft:generic.gravity",
+				"operation": "add_multiplied_total",
+				"value": 3,
+				"id": "zippy",
+				"amount": 1
+			},
+			{
 				"attribute": "minecraft:generic.jump_strength",
 				"operation": "add_multiplied_total",
+				"value": 2,
 				"id": "zippy",
-				"amount": 2
+				"amount": 1
 			},
 			{
 				"attribute": "minecraft:generic.safe_fall_distance",
 				"operation": "add_value",
+				"value": 1,
 				"id": "zippy",
 				"amount": 1
 			},
 			{
 				"attribute": "minecraft:generic.step_height",
 				"operation": "add_multiplied_total",
+				"value": 0,
 				"id": "zippy",
-				"amount": 0.5
+				"amount": 1
 			}
 		],
 		"tick_rate": 1,
@@ -76,19 +119,10 @@
 					"inverted": true
 				},
 				{
-					"type": "origins:block_collision",
-					"offset_x": 1,
-					"offset_y": 2,
-					"offset_z": 1,
+					"type": "origins:status_effect",
+					"effect": "minecraft:slowness",
 					"inverted": true
-				},
-				{
-					"type": "origins:block_collision",
-					"offset_x": -1,
-					"offset_y": 2,
-					"offset_z": -1,
-					"inverted": true
-				},
+				}
 			]
 		}
 	}
