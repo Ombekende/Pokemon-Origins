@@ -1,0 +1,69 @@
+{
+    "type": "origins_multiple",
+
+    "toggle": {
+        "type": "origins:toggle",
+        "active_by_default": false,
+        "key": {
+            "key": "key.origins.primary_active"
+        },
+        "retain_state": false,
+        "condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "orimon:lifesteal_cooldown",
+                    "comparison": "==",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins: resource",
+                    "resource": "orimon:lifesteal_cooldown",
+                    "comparison": ">=",
+                    "compare_to": 200
+                }
+            ]
+        }
+        
+    },
+    "cooldown": {
+        "type": "origins:cooldown",
+        "cooldown": 300,
+        "hud_render": {
+            "should_render": true,
+            "bar_index": 1
+        }
+    },
+    "action_on_hit": {
+        "type": "origins:action_on_hit",
+        "bientity_action": {
+            "type": "origins:and", 
+            "actions": [
+                {
+                    "type": "origins:actor_action",
+                    "action": {  
+                        "type": "origins:heal",
+                        "amount": 3
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "orimon:lifesteal_cooldown",
+                        "change": 199,
+                        "operation": "set"
+                    }
+                },
+                {
+                    "type": "origins:damage",
+                    "amount": 3,
+                    "source": {
+                        "name": "player"
+                    }
+                }
+            ]
+        }
+    }
+}
