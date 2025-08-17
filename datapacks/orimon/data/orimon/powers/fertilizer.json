@@ -1,6 +1,6 @@
 {
 		"type": "origins:active_self",
-		"entity_action":{
+		"entity_action": {
 			"type": "origins:raycast",
 			"distance": 5,
 			"shape_type": "outline",
