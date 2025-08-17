@@ -9,7 +9,7 @@
 	"tick_rate": 1,
 	"effects": {
 		"id": "minecraft:slowness",
-		"amplifier": 2,
+		"amplifier": 1,
 		"is_ambient": false,
 		"show_particles": false,
 		"show_icon": true
