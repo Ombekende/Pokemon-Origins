@@ -1,0 +1,16 @@
+{
+	"type": "origins:edible_item",
+	"hidden": true,
+	"item_condition": {
+		"type": "origins:ingredient",
+		"ingredient": {
+			"item": "minecraft:redstone"
+		}
+	},
+	"food_component": {
+		"nutrition": 5,
+		"saturation": 0.6,
+		"meat": false,
+		"snack": true
+	}
+}

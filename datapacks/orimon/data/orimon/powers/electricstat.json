@@ -1,26 +1,26 @@
 {
+	"name": "Base Stats",
+	"description": "You are slightly faster than other types, but have one less heart of health.",
+	
 	"type": "origins:conditioned_attribute",
 	"modifiers": [
 		{
 				"id": "electrictype",
 				"attribute": "minecraft:generic.movement_speed",
 				"operation": "add_multiplied_total",
-				"value": 0.05,
-				"amount": 1
+				"amount": 0.75
 		},
 		{
 				"id": "electrictype",
 				"attribute": "minecraft:generic.attack_speed",
 				"operation": "add_multiplied_total",
-				"value": 2,
 				"amount": 1
 		},
 		{
 			"id": "electrictype",
 			"attribute": "minecraft:generic.max_health",
 			"operation": "add_value",
-			"value": -4,
-			"amount": 1
+			"amount": -2
 		}
 	],
 	"hidden": false,

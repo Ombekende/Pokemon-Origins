@@ -1,10 +1,16 @@
 {
 	"powers": [
 	"orimon:zippy",
-	"orimon:electricstat"
+	"orimon:electricstat",
+	"orimon:electricfood",
+	"orimon:eat_redstonedust",
+	"orimon:eat_redstoneblock",
+	"orimon:lightningstrike",
+	"orimon:electricslow"
 	],
 	"order": 1,
 	"impact": 0,
 	"name": "Electric Type",
-	"description": "Incredibly fast, but does poorly underground."
+	"description": "Incredibly fast, but needs space to move around.",
+	"impact": 2
 }

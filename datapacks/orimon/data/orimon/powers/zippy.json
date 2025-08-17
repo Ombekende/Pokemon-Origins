@@ -11,6 +11,18 @@
 		},
 		"retain_state": false
 	},
+	
+	{
+		"type": "origins:self_glow",
+		"use_teams": false,
+		"red": 1,
+		"green": 1,
+		"blue": 0,
+		"condition": {
+			"type": "origins:power_active",
+			"power": "*:*_toggle"
+		}
+	},
 
 	
 	"conditioned_attribute": {
@@ -19,37 +31,32 @@
 			{
 				"attribute": "minecraft:generic.movement_speed",
 				"operation": "add_multiplied_total",
-				"value": 1,
 				"id": "zippy",
 				"amount": 3
 			},
 			{
 				"attribute": "minecraft:generic.gravity",
 				"operation": "add_multiplied_total",
-				"value": 3,
 				"id": "zippy",
-				"amount": 1
+				"amount": 3
 			},
 			{
 				"attribute": "minecraft:generic.jump_strength",
 				"operation": "add_multiplied_total",
-				"value": 2,
 				"id": "zippy",
-				"amount": 1
+				"amount": 2
 			},
 			{
 				"attribute": "minecraft:generic.safe_fall_distance",
 				"operation": "add_value",
-				"value": 1,
 				"id": "zippy",
 				"amount": 1
 			},
 			{
 				"attribute": "minecraft:generic.step_height",
 				"operation": "add_multiplied_total",
-				"value": 0,
 				"id": "zippy",
-				"amount": 1
+				"amount": 0.5
 			}
 		],
 		"tick_rate": 1,
