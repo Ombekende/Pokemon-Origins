@@ -1,0 +1,18 @@
+{
+	"order": 1,
+	"origins": [
+	"orimon:normal",
+	"orimon:grass",
+	"orimon:fire",
+	
+	"orimon:flying",
+	"orimon:electric",
+	"orimon:dark"
+	],
+	"name": "Primary Type",
+	"missing_name": "None",
+	"missing_description": "You have not chosen a primary type!",
+	"enabled": true,
+	"allow_random": true,
+	"loading_priority": 1
+}
