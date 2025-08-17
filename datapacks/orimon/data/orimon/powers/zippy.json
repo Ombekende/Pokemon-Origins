@@ -32,7 +32,7 @@
 				"attribute": "minecraft:generic.movement_speed",
 				"operation": "add_multiplied_total",
 				"id": "zippy",
-				"amount": 3
+				"amount": 2
 			},
 			{
 				"attribute": "minecraft:generic.gravity",
@@ -74,7 +74,21 @@
 				{
 					"type": "origins:sneaking",
 					"inverted": true
-				}
+				},
+				{
+					"type": "origins:block_collision",
+					"offset_x": 1,
+					"offset_y": 2,
+					"offset_z": 1,
+					"inverted": true
+				},
+				{
+					"type": "origins:block_collision",
+					"offset_x": -1,
+					"offset_y": 2,
+					"offset_z": -1,
+					"inverted": true
+				},
 			]
 		}
 	}
