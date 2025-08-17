@@ -1,0 +1,23 @@
+{
+	"type": "origins:edible_item",
+	"hidden": true,
+	"item_condition": {
+		"type": "origins:ingredient",
+		"ingredient": {
+			"item": "minecraft:redstone_block"
+		}
+	},
+	"food_component": {
+		"nutrition": 10,
+		"saturation": 0.6,
+		"meat": false
+	},
+	"entity_action": {
+		"type": "origins:apply_effect",
+		"effect": {
+			"id": "minecraft:saturation",
+			"amplifier": 0,
+			"duration": 20
+		}
+	}
+}

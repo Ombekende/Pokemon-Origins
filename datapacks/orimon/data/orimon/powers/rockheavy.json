@@ -1,0 +1,17 @@
+{
+    "type": "origins:conditioned_attribute",
+    "condition": {
+        "type": "origins:fall_flying"
+    },
+    "modifier": {
+        "attribute": "minecraft:generic.gravity",
+        "operation": "add_multiplied_base",
+        "value": 1,
+        "name": "Increased sprinting speed",
+		"id": "groundtype",
+		"amount": 1
+    },
+    "tick_rate": 5,
+	"name": "Rock Heavy",
+	"description": "Flying is made difficult due to your weight."
+}

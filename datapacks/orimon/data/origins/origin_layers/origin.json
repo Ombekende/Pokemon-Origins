@@ -1,7 +1,12 @@
 {
 	"order": 1,
 	"origins": [
-	"orimon:normal"
+	"orimon:normal",
+	"orimon:grass",
+	"orimon:fire",
+	
+	"orimon:flying",
+	"orimon:electric"
 	],
 	"name": "Primary Type",
 	"missing_name": "None",

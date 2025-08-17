@@ -1,0 +1,37 @@
+{
+	"type": "origins:stacking_status_effect",
+	"name": "Free Space",
+	"description": "Hitting walls slows you down significantly.",
+	
+	"min_stacks": 0,
+	"max_stacks": 5,
+	"duration_per_stack": 10,
+	"tick_rate": 1,
+	"effects": {
+		"id": "minecraft:slowness",
+		"amplifier": 2,
+		"is_ambient": false,
+		"show_particles": false,
+		"show_icon": true
+	},
+	"condition": {
+		"type": "origins:or",
+		"conditions": [
+		{
+			"type": "origins:block_collision",
+			"offset_x": 1,
+			"offset_y": 2,
+			"offset_z": 1
+		},
+		{
+			"type": "origins:block_collision",
+			"offset_x": -1,
+			"offset_y": 2,
+			"offset_z": -1
+		},
+		{
+			"type": "origins:collided_horizontally"
+		}
+		]
+	}
+}

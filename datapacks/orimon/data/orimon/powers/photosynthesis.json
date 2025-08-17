@@ -1,14 +1,14 @@
 {
     "type": "origins:stacking_status_effect",
-	"min_stacks": -9,
-	"max_stacks": 100,
-	"duration_per_stack": 10,
+	"min_stacks": -4,
+	"max_stacks": 10,
+	"duration_per_stack": 21,
 	"tick_rate": 10,
 	"effects": {
 		"amplifier": 0,
-		"duration": -1,
+		"duration": 10,
 		"show_icon": false,
-		"is_ambient": true,
+		"show_particles": true,
 		"id": "minecraft:regeneration"
 	},
 	"name": "Photosynthesis",
