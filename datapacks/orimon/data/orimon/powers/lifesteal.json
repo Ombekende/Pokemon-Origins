@@ -34,7 +34,6 @@
                     "type": "origins:damage",
                     "amount": 3,
                     "damage_type": "minecraft:generic"
-<<<<<<< Updated upstream
                 }
             ]
         },
@@ -52,37 +51,9 @@
                     "resource": "orimon:lifesteal_cooldown",
                     "comparison": ">",
                     "compare_to": 0
-=======
->>>>>>> Stashed changes
                 }
             ]
-        },
-        "condition": 
-        {
-            "type": "origins:resource",
-            "resource": "orimon:lifesteal_cooldown",
-            "comparison": "<=",
-            "compare_to": 100
         }
-    },
-    "active_self": {
-        "type": "origins:active_self",
-        "entity_action": {
-            "type": "origins:change_resource",
-            "resource": "orimon:lifesteal_cooldown",
-            "change": 1,
-            "operation": "set"
-        },
-        "key": {
-            "key": "key.origins.primary_active"
-        },
-        "condition": {
-            "type": "origins:resource",
-            "resource": "orimon:lifesteal_cooldown",
-            "comparison": "==",
-            "compare_to": 300
-        }
-        
     },
     "active_self": {
         "type": "origins:active_self",
