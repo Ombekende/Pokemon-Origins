@@ -1,0 +1,74 @@
+{
+    "type": "origins:multiple",
+
+    "cooldown": {
+        "type": "origins:cooldown",
+        "cooldown": 300,
+        "hud_render": {
+            "should_render": true,
+            "bar_index": 1
+        }
+    },
+    "action_on_hit": {
+        "type": "origins:action_on_hit",
+        "bientity_action": {
+            "type": "origins:and", 
+            "actions": [
+                {
+                    "type": "origins:actor_action",
+                    "action": {  
+                        "type": "origins:heal",
+                        "amount": 3
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "orimon:lifesteal_cooldown",
+                        "change": 101,
+                        "operation": "set"
+                    }
+                },
+                {
+                    "type": "origins:damage",
+                    "amount": 3,
+                    "damage_type": "minecraft:generic"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "orimon:lifesteal_cooldown",
+                    "comparison": "<=",
+                    "compare_to": 100
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "orimon:lifesteal_cooldown",
+                    "comparison": ">",
+                    "compare_to": 0
+                }
+            ]
+        }
+    },
+    "active_self": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:trigger_cooldown",
+            "power": "orimon:lifesteal_cooldown"
+        },
+        "key": {
+            "key": "key.origins.primary_active"
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "orimon:lifesteal_cooldown",
+            "comparison": "==",
+            "compare_to": 0
+        }
+    }
+}

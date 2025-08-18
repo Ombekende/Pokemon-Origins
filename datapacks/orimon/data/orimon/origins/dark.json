@@ -1,0 +1,11 @@
+{
+        "powers": [
+        "orimon:night_vision",
+        "orimon:blinding_daylight",
+        "orimon:lifesteal"
+        ],
+        "order": 1,
+        "impact": 2,
+        "name": "Dark Type",
+        "description": "You thrive in caves and at night, but during the day you are blind."
+}
