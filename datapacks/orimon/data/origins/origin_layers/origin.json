@@ -1,13 +1,11 @@
 {
 	"order": 1,
 	"origins": [
-	"orimon:normal"
+	"origins:human"
 	],
-	"name": "Primary Type",
-	"missing_name": "None",
-	"missing_description": "You have not chosen a primary type!",
-	"enabled": true,
-	"allow_random": true,
+	"auto_choose": true,
+	"enabled": false,
+	"hidden": true,
 	"replace": true,
 	"loading_priority": 1
 }

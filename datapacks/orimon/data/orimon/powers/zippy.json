@@ -1,0 +1,129 @@
+{
+	"type": "origins:multiple",
+	"name": "Speed Boost",
+	"description": "You can move at incredibly high speeds, as well as jump higher.",
+	
+	"toggle": {
+		"type": "origins:toggle",
+		"active_by_default": true,
+		"key": {
+			"key": "key.origins.primary_active"
+		},
+		"retain_state": false
+	},
+	
+	"glowy": {
+		"type": "origins:self_glow",
+		"use_teams": false,
+		"red": 1,
+		"green": 0.9529411764705882,
+		"blue": 0.3725490196078431,
+		
+		"bientity_condition": {
+			"type": "origins:can_see"
+		},		
+		"condition": {
+			"type": "origins:power_active",
+			"power": "*:*_toggle"
+		}
+	},
+	
+	"speedyparticles": {
+		"type": "origins:particle",
+		"particle": "minecraft:electric_spark",
+		"frequency": 1,
+		"count": 10,
+		"speed": 0.5,
+		"visible_in_first_person": true,
+		
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:power_active",
+				"power": "*:*_toggle"
+			},
+			{
+				"type": "origins:moving"
+			}
+			]
+		}
+	},
+	
+	"staticparticles": {
+		"type": "origins:particle",
+		"particle": "minecraft:electric_spark",
+		"frequency": 10,
+		"count": 2,
+		"speed": 0.1,
+		
+		"condition": {
+			"type": "origins:power_active",
+			"power": "*:*_toggle"
+		}
+	},
+	
+	"conditioned_attribute": {
+		"type": "origins:conditioned_attribute",
+		"modifiers": [
+			{
+				"attribute": "minecraft:generic.movement_speed",
+				"operation": "add_multiplied_total",
+				"value": 1,
+				"id": "zippy",
+				"amount": 3
+			},
+			{
+				"attribute": "minecraft:generic.gravity",
+				"operation": "add_multiplied_total",
+				"value": 3,
+				"id": "zippy",
+				"amount": 1
+			},
+			{
+				"attribute": "minecraft:generic.jump_strength",
+				"operation": "add_multiplied_total",
+				"value": 2,
+				"id": "zippy",
+				"amount": 1
+			},
+			{
+				"attribute": "minecraft:generic.safe_fall_distance",
+				"operation": "add_value",
+				"value": 1,
+				"id": "zippy",
+				"amount": 1
+			},
+			{
+				"attribute": "minecraft:generic.step_height",
+				"operation": "add_multiplied_total",
+				"value": 0,
+				"id": "zippy",
+				"amount": 1
+			}
+		],
+		"tick_rate": 1,
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:power_active",
+					"power": "*:*_toggle"
+				},
+				{
+					"type": "origins:fall_flying",
+					"inverted": true
+				},
+				{
+					"type": "origins:sneaking",
+					"inverted": true
+				},
+				{
+					"type": "origins:status_effect",
+					"effect": "minecraft:slowness",
+					"inverted": true
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"type": "origins:multiple",
+	"name": "Poké Ride",
+	"description": "Press use with an empty hand to pick up a mob, then crouch + use with an empty hand to put it down again.",
+	
+	"grab": {
+		"type": "origins:action_on_entity_use",
+		"bientity_action": {
+			"type": "origins:invert",
+			"action": { 
+				"type": "origins:mount" 
+			}
+		}
+	},
+	
+	"drop": {
+		"type": "origins:action_on_block_use",
+		"entity_action": {
+			"type": "origins:passenger_action",
+			"recursive": true,
+			"action": {
+				"type": "origins:dismount"
+			}
+		}
+	},
+	
+	"end": {
+		"type": "origins:simple"
+	}
+}
