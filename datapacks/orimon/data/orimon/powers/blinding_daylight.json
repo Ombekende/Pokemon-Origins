@@ -1,0 +1,19 @@
+{
+    "type": "origins:stacking_status_effect",
+	"min_stacks": -1,
+	"max_stacks": 10,
+	"duration_per_stack": 10,
+	"tick_rate": 1,
+	"effects": {
+		"amplifier": 0,
+		"duration": -1,
+		"show_icon": false,
+		"is_ambient": true,
+		"id": "minecraft:darkness"
+	},
+	"name": "Blinding_Lights",
+	"description": "Your life in the dark makes it hard to see in the daylight.",
+	"condition": {
+		"type": "origins:exposed_to_sun"
+	}
+}
