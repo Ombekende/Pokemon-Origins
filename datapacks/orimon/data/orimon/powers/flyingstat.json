@@ -1,0 +1,37 @@
+{
+	"type": "origins:multiple",
+	"name": "placeholder",
+	"description": "pplaceholder",
+	
+	"lowweakness": {
+	"type": "origins:stacking_status_effect",
+	"min_stacks": -9,
+	"max_stacks": 10,
+	"duration_per_stack": 23,
+	"tick_rate": 20,
+	"effects": [
+	{
+		"id": "minecraft:weakness",
+		"is_ambient": true,
+		"show_particles": false,
+		"show_icon": true
+	},
+	{
+		"id": "minecraft:mining_fatigue",
+		"is_ambient": true,
+		"show_particles": false,
+		"show_icon": true
+	}
+	],
+	"condition": {
+		"type": "origins:distance_from_coordinates",
+		"ignore_x": true,
+		"ignore_z": true,
+		"offset": {
+			"y": -64
+		},
+		"comparison": "<=",
+		"compare_to": 102
+	}
+	}
+}

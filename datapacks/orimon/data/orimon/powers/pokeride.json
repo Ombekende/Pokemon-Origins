@@ -1,30 +1,61 @@
 {
-	"type": "origins:multiple",
+	"type": "origins:active_self",
 	"name": "Poké Ride",
-	"description": "Press use with an empty hand to pick up a mob, then crouch + use with an empty hand to put it down again.",
+	"description": "Pick up mobs to transport them, then press the key again to drop them!",
 	
-	"grab": {
-		"type": "origins:action_on_entity_use",
-		"bientity_action": {
-			"type": "origins:invert",
-			"action": { 
-				"type": "origins:mount" 
-			}
-		}
+	"key": {
+		"key": "key.origins.primary_active"
 	},
 	
-	"drop": {
-		"type": "origins:action_on_block_use",
-		"entity_action": {
-			"type": "origins:passenger_action",
-			"recursive": true,
-			"action": {
-				"type": "origins:dismount"
+	"entity_action": {
+		"type": "origins:if_else",
+		"condition": {
+			"type": "origins:passenger"
+		},
+		"if_action": {
+            "type": "origins:passenger_action",
+            "action": {
+                "type": "origins:dismount"
+            },
+            "bientity_action": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:dismount"
+                    }
+                },
+				{
+					"type": "origins:actor_action",
+					"action": {
+						"type": "origins:swing_hand"
+					}
+				}
+			]
+		},
+		"else_action": {
+			"type": "origins:raycast",
+			"shape_type": "outline",
+			"fluid_handling": "none",
+			"bientity_action": [
+			{
+				"type": "origins:invert",
+				"action": {
+					"type": "origins:mount"
+				}
+			},
+			{
+				"type": "origins:actor_action",
+				"action": [
+				{
+					"type": "origins:swing_hand"
+				},
+				{
+					"type": "origins:play_sound",
+					"sound": "minecraft:entity.strider.saddle"
+				}
+				]
 			}
+			]
 		}
-	},
-	
-	"end": {
-		"type": "origins:simple"
 	}
 }

@@ -1,0 +1,11 @@
+{
+	"powers": [
+	"orimon:psychicstat",
+	"origins:throw_ender_pearl",
+	"orimon:doublejump"
+	],
+	"order": 1,
+	"impact": 0,
+	"name": "Psychic Type",
+	"description": "Able to teleport and doublejump, at the cost of attack power."
+}

@@ -19,15 +19,15 @@
 		"conditions": [
 		{
 			"type": "origins:block_collision",
-			"offset_x": 1,
+			"offset_x": 2,
 			"offset_y": 2,
-			"offset_z": 1
+			"offset_z": 2
 		},
 		{
 			"type": "origins:block_collision",
-			"offset_x": -1,
+			"offset_x": -2,
 			"offset_y": 2,
-			"offset_z": -1
+			"offset_z": -2
 		},
 		{
 			"type": "origins:collided_horizontally"
