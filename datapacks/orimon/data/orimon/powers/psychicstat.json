@@ -1,0 +1,27 @@
+{
+	"name": "Base Stats",
+	"description": "You have one less heart, and your melee attacks are slightly weaker.",
+	
+	"type": "origins:conditioned_attribute",
+	"modifiers": [
+		{
+				"id": "psychictype",
+				"attribute": "minecraft:generic.attack_damage",
+				"operation": "add_multiplied_total",
+				"amount": -0.2
+		},
+		{
+			"id": "psychictype",
+			"attribute": "minecraft:generic.max_health",
+			"operation": "add_value",
+			"amount": -2
+		}
+	],
+	"hidden": false,
+	
+	"tick_rate": 100,
+	"condition": {
+		"type": "origins:exists"
+	}
+	
+}

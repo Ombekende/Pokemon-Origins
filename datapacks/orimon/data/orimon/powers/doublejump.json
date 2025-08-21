@@ -1,0 +1,95 @@
+{
+	"name": "Double jump",
+	"description": "Press jump in midair to jump again! (IF THIS IS STILL HERE REMOVE HUD WAAA)",
+	
+	"type": "origins:multiple",
+	
+	"grounded": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 1,
+		"hud_render": {
+			"should_render": true
+		}
+	},
+	
+	"landing": {
+		"type": "origins:action_on_land",
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "*:*_grounded",
+			"change": 0,
+			"operation": "set"
+		}
+	},
+	
+	"jumping": {
+		"type": "origins:active_self",
+		"key": {
+			"key": "key.jump"
+		},
+		"entity_action": {
+			"type": "origins:if_else",
+			"condition": {
+				"type": "origins:block_collision",
+				"offset_y": -0.1
+			},
+			
+			"if_action": {
+				"type": "origins:change_resource",
+				"resource": "*:*_grounded",
+				"change": 0,
+				"operation": "set"
+			},
+			
+			"else_action": {
+				"type": "origins:change_resource",
+				"resource": "*:*_grounded",
+				"change": 1,
+				"operation": "add"
+			}
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+			{
+				"type": "origins:fluid_height",
+				"fluid": "minecraft:water",
+				"comparison": "==",
+				"compare_to": 0
+			},
+			{
+				"type": "origins:fluid_height",
+				"fluid": "minecraft:lava",
+				"comparison": "==",
+				"compare_to": 0
+			}
+			]
+		}
+	},
+	
+	"canjump": {
+		"type": "origins:grounded",
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_grounded",
+			"comparison": "==",
+			"compare_to": 0
+		}
+	},
+	
+	"nostepup": {
+		"type": "origins:modify_attribute",
+		"attribute": "minecraft:generic.step_height",
+		"modifier": {
+			"operation": "set_total",
+			"amount": 0
+		},
+		"condition": {
+			"type": "origins:block_collision",
+			"offset_y": -0.1,
+			"inverted": true
+		},
+		"tick_rate": 1
+	}
+}

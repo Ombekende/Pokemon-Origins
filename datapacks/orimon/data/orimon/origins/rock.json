@@ -1,0 +1,10 @@
+{
+	"powers": [
+	"orimon:rockactive",
+	"orimon:rockheavy"
+	],
+	"order": 1,
+	"impact": 1,
+	"name": "Rock Type",
+	"description": "Able to mine with their bare hands, but heavy and vulnerable to water."
+}

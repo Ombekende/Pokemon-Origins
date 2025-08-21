@@ -6,10 +6,8 @@
     "modifier": {
         "attribute": "minecraft:generic.gravity",
         "operation": "add_multiplied_base",
-        "value": 1,
-        "name": "Increased sprinting speed",
 		"id": "groundtype",
-		"amount": 1
+		"amount": 0.8
     },
     "tick_rate": 5,
 	"name": "Rock Heavy",

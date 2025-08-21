@@ -6,8 +6,10 @@
 	"orimon:fire",
 	
 	"orimon:flying",
+	"orimon:rock",
 	"orimon:electric",
-	"orimon:dark"
+	"orimon:dark",
+	"orimon:psychic"
 	],
 	"name": "Primary Type",
 	"missing_name": "None",
