@@ -1,7 +1,6 @@
 {
 	"powers": [
-	"orimon:rockactive",
-	"orimon:rockheavy"
+	"orimon:rockactive"
 	],
 	"order": 1,
 	"impact": 1,
