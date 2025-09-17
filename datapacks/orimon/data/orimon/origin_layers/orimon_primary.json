@@ -9,7 +9,8 @@
 	"orimon:rock",
 	"orimon:electric",
 	"orimon:dark",
-	"orimon:psychic"
+	"orimon:psychic",
+	"orimon:bug"
 	],
 	"name": "Primary Type",
 	"missing_name": "None",
