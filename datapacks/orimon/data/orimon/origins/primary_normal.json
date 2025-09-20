@@ -1,6 +1,7 @@
 {
 	"powers": [
-	"origins:shulker_inventory"
+	"origins:shulker_inventory",
+	"orimon:normal_stats"
 	],
 	"order": 1,
 	"impact": 0,

@@ -1,6 +1,6 @@
 {
 	"powers": [
-	"orimon:throwpoison"
+	"orimon:poison_keybind_primary"
 	],
 	"order": 1,
 	"impact": 0,

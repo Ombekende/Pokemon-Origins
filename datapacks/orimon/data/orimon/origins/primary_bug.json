@@ -1,6 +1,6 @@
 {
 	"powers": [
-	"orimon:keybind-bug"
+	"orimon:bug_keybind_primary"
 	],
 	"order": 1,
 	"impact": 1,

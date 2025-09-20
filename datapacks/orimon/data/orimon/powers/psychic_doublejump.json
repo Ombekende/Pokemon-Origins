@@ -111,12 +111,12 @@
 		"attribute": "minecraft:generic.step_height",
 		"modifier": {
 			"operation": "set_total",
-			"value": 0
+			"amount": 0
 		},
 		"condition": {
 			"type": "origins:resource",
 			"resource": "*:*_grounded",
-			"comparison": "=",
+			"comparison": "!=",
 			"compare_to": 0
 		}
 	}

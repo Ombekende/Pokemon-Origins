@@ -25,7 +25,7 @@
                     "type": "origins:actor_action",
                     "action": {
                         "type": "origins:change_resource",
-                        "resource": "orimon:lifesteal_cooldown",
+                        "resource": "*:*_cooldown",
                         "change": 101,
                         "operation": "set"
                     }
@@ -42,13 +42,13 @@
             "conditions": [
                 {
                     "type": "origins:resource",
-                    "resource": "orimon:lifesteal_cooldown",
+                    "resource": "*:*_cooldown",
                     "comparison": "<=",
                     "compare_to": 100
                 },
                 {
                     "type": "origins:resource",
-                    "resource": "orimon:lifesteal_cooldown",
+                    "resource": "*:*_cooldown",
                     "comparison": ">",
                     "compare_to": 0
                 }
@@ -59,14 +59,14 @@
         "type": "origins:active_self",
         "entity_action": {
             "type": "origins:trigger_cooldown",
-            "power": "orimon:lifesteal_cooldown"
+            "power": "*:*_cooldown"
         },
         "key": {
             "key": "key.origins.primary_active"
         },
         "condition": {
             "type": "origins:resource",
-            "resource": "orimon:lifesteal_cooldown",
+            "resource": "*:*_cooldown",
             "comparison": "==",
             "compare_to": 0
         }

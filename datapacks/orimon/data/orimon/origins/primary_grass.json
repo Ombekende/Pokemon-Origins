@@ -1,8 +1,8 @@
 {
 	"powers": [
-	"orimon:photosynthesis",
-	"orimon:flammable",
-	"orimon:fertilizer"
+	"orimon:grass_sunheal",
+	"orimon:grass_flammable",
+	"orimon:grass_keybind_primary"
 	],
 	"order": 1,
 	"impact": 0,

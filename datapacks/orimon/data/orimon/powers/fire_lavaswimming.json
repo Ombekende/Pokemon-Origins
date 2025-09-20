@@ -2,6 +2,6 @@
     "type": "origins:swimming",
     "condition": {
         "type": "origins:submerged_in",
-        "fluid": "minecraft_lava"
+        "fluid": "minecraft:lava"
     }
 }
