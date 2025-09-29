@@ -1,0 +1,12 @@
+{
+	"powers": [
+        "orimon:water_keybind_primary",
+        "origins:water_vision",
+        "origins:aqua_affinity",
+        "origins:swim_speed"
+	],
+	"order": 1,
+	"impact": 0,
+	"name": "Water Type",
+	"description": "Keep your head cool and maybe even summon the rain!"
+}
