@@ -1,8 +1,10 @@
 {
     "type": "origins:modify_lava_speed",
     "modifier": {
-        "operation": "multiply_base_multiplicative",
-        "value": 1
+        "operation": "ADD_MULTIPLIED_BASE",
+        "value": 1,
+		"id": "firetype",
+		"amount": 1
     },
     "name": "LavaWalking",
     "description": "Move faster through hot liquids"

@@ -2,9 +2,9 @@
 	"powers": [
 	"origins:elytra",
 	"origins:fresh_air",
-	"orimon:poweredflight",
-	"orimon:flyingstat",
-	"orimon:pokeride"
+	"orimon:flying_flyboost",
+	"orimon:flying_stats",
+	"orimon:flying_keybind_primary"
 	],
 	"order": 1,
 	"impact": 0,

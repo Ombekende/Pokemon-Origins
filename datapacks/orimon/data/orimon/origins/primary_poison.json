@@ -1,0 +1,9 @@
+{
+	"powers": [
+	"orimon:poison_keybind_primary"
+	],
+	"order": 1,
+	"impact": 0,
+	"name": "Poison Type",
+	"description": "placeholder"
+}

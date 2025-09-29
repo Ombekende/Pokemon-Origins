@@ -1,0 +1,15 @@
+{
+	"name": "placeholder",
+	"description": "placeholder",
+	"cooldown": 5,
+	
+	"type": "origins:fire_projectile",
+	"hud_render": {
+		"should_render": true,
+		"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+		"bar_index": 19
+	},
+	"speed": 1.2,
+	"entity_type": "minecraft:potion",
+	"tag": "{Item: {id:'minecraft:slime_ball', count:1b, components:{'minecraft:potion_contents':{potion:'minecraft:poison',custom_color:10502304}}}}"
+}

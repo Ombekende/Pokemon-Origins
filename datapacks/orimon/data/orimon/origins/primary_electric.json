@@ -1,0 +1,16 @@
+{
+	"powers": [
+	"orimon:electric_keybind_primary",
+	"orimon:electric_stats",
+	"orimon:electric_fooddebuff",
+	"orimon:electric_eat_redstonedust",
+	"orimon:electric_eat_redstoneblock",
+	"orimon:electric_lightningbuff",
+	"orimon:electric_wallslow"
+	],
+	"order": 1,
+	"impact": 0,
+	"name": "Electric Type",
+	"description": "Incredibly fast, but needs space to move around.",
+	"impact": 2
+}

@@ -1,15 +1,16 @@
 {
 	"order": 1,
 	"origins": [
-	"orimon:normal",
-	"orimon:grass",
-	"orimon:fire",
+	"orimon:primary_normal",
+	"orimon:primary_grass",
+	"orimon:primary_fire",
 	
-	"orimon:flying",
-	"orimon:rock",
-	"orimon:electric",
-	"orimon:dark",
-	"orimon:psychic"
+	"orimon:primary_flying",
+	"orimon:primary_rock",
+	"orimon:primary_electric",
+	"orimon:primary_dark",
+	"orimon:primary_psychic",
+	"orimon:primary_bug"
 	],
 	"name": "Primary Type",
 	"missing_name": "None",
